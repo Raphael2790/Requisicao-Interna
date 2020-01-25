@@ -3,25 +3,36 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   width: 940px;
   margin: 10px auto;
+  border: #000 solid 5px;
+  border-radius: 20px;
+  box-shadow:rgb(46, 46, 46) 10px 10px;
+  background-image: linear-gradient(#B0975B,#fff,#B0975B);
 }
 
 header {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   font-size: 40px;
   font-weight: bolder;
-  border: #000 solid 1px;
+  padding: 5px;
 }
 
-#Logo {
+header h1 {
+  border: solid #000 1px;
+  border-radius: 20px;
+  background: rgb(238, 238, 238);
+}
+
+header img {
+  border-radius: 20px;
+  box-shadow: #ccc 4px 5px;
 }
 
 main {
   text-align: center;
   margin: 5 auto;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bolder;
-  border: #000 solid 1px;
   padding: 5px;
 }
 
@@ -31,13 +42,13 @@ a {
   margin: 10px 20px;
 }
 
-.linkRequisicao {
-  border: #000 solid 1px;
-  border-radius: 25%;
-  padding: 5px;
-  margin: 30px
-}
-
 a:hover {
   color: #00B7FF;
+  font-size: 28px;
+}
+
+footer div p {
+  text-align: center;
+  margin: 10px auto;
+  font-weight: bolder;
 }

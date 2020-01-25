@@ -10,16 +10,23 @@
 </head>
 <body>
   <header>
-    <img src="../images/logoSRH.png" alt="Logo San Raphael" id="Logo">
+    <img src="<%=imagem%>" alt="Logo San Raphael">
     <h1><%= title %></h1>
   </header>
   <main>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
-    <a href="/reqCozinha"><span class="linkRequisicao">Requisição cozinha</span></a></br>
+    <h2>
+      Clique em um link para ser direcionado a requisição do seu setor:
+    </h2>
+    <ul id="link_setores">
+      <% for(let item of listaSetores) { %>
+        <li><a href="<%=link + item%>"> <span><%= item %></span></a></li>
+      <% } %>
+    </ul>
   </main>
+  <footer>
+    <div>
+    <p>&copy;Todos direitos reservados San Raphael 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
