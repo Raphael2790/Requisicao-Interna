@@ -1,8 +1,43 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 940px;
+  margin: 10px auto;
+}
+
+header {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: bolder;
+  border: #000 solid 1px;
+}
+
+#Logo {
+}
+
+main {
+  text-align: center;
+  margin: 5 auto;
+  font-size: 30px;
+  font-weight: bolder;
+  border: #000 solid 1px;
+  padding: 5px;
 }
 
 a {
+  text-decoration: none;
+  color: #000;
+  margin: 10px 20px;
+}
+
+.linkRequisicao {
+  border: #000 solid 1px;
+  border-radius: 25%;
+  padding: 5px;
+  margin: 30px
+}
+
+a:hover {
   color: #00B7FF;
 }

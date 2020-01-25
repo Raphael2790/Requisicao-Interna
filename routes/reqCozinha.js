@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res , next) => {
-    res.render('new', {title: 'Nova página'});
+    res.render('reqCozinha', {title: 'Requisição Web - San Raphael Hotel'});
 } );
 
 module.exports = router
