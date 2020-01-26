@@ -19,15 +19,15 @@
       Clique em um link para ser direcionado a requisição do seu setor:
     </h2>
     <ul id="link_setores">
-      <% for(let item of listaSetores) { %>
-        <li><a href="<%=link + item%>"> <span><%= item %></span></a></li>
-      <% } %>
+      <section>
+        <% for(let item of listaSetores) { %>
+        <div><li><a href="<%=link + item%>"> <span><%= item %></span></a></li></div>
+        <% } %>
+     </section>
     </ul>
   </main>
   <footer>
-    <div>
     <p>&copy;Copyright San Raphael 2020</p>
-    </div>
   </footer>
 </body>
 </html>
