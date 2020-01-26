@@ -11,14 +11,12 @@ const utilidades = {
     'Eventos', 
     'Financeiro',
     'Choperia'],
-    criarPdf: () => {
-        let body = document.querySelector('body')
-        
-        ejs.renderFile(body, {},(err,html)=> {
+    criarPdf: (ejsview) => {
+        ejs.renderFile(ejsview, {},(err,html)=> {
             if(err) {
                 console.log(err)
             }else {
-                pdf.create(html,{}).toFile(`../pdf/${Date.now()}.pdf`, (err,res) => {
+                pdf.create(html,{}).toFile(`./pdf/${Date.now()}.pdf`, (err,res) => {
                     if(err) {
                         console.log(err)
                     }else {
@@ -27,7 +25,8 @@ const utilidades = {
                     })
                 }
             })
-    }
+    },
+    itensCozinha: ['Arroz', 'Feijão', 'Macarrão', 'Presunto'],
 }
 
 module.exports = utilidades
