@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 
+const utilidades = require('../public/javascripts/utils')
+
 
 /*function transformPDF(pagina) {
   pdf.create(pagina).toFile('../pdf/Requisicao_Salva.pdf',(err,res) => {
@@ -16,17 +18,10 @@ const fs = require('fs');
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  const setores = [
-   'Cozinha',
-   'Restaurante', 
-   'Padaria', 
-   'Governanca', 
-   'Eventos', 
-   'Financeiro',
-   'Choperia']
+  utilidades.setores
   res.render('index', { 
     title: 'Requisição Web',
-    listaSetores: setores,
+    listaSetores: utilidades.setores,
     link: '/req',
     imagem:'../images/logoSRH.png',
 });
