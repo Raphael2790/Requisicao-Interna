@@ -60,9 +60,9 @@ footer div p {
   font-weight: bolder;
 }
 
-@media (max-width:480px) {
+@media (max-width:500px) {
   body {
-    width:100%;
+    width:auto;
     margin: 30px auto;
   }
 }
