@@ -10,7 +10,9 @@ const utilidades = {
     'Governanca', 
     'Eventos', 
     'Financeiro',
-    'Choperia'],
+    'Choperia',
+    'Lavanderia',  
+     ],
     criarPdf: (ejsview) => {
         ejs.renderFile(ejsview, {},(err,html)=> {
             if(err) {

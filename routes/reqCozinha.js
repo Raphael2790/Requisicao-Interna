@@ -18,7 +18,7 @@ router.get('/', (req, res , next) => {
 } );
 
 router.post('/', (req, res, next) => {
-    ejs.renderFile('./views/reqCozinha.ejs', {imagem:'https://www.sanraphael.com.br/images/home/01%20-%20Logo%20San%20Raphael%20%20Hotel.jpg', title: 'Requisição Web',itensCozinha: utilidades.itensCozinha},(err,html)=> {
+    ejs.renderFile('./views/reqCozinha.ejs', {imagem2:'https://www.sanraphael.com.br/images/home/01%20-%20Logo%20San%20Raphael%20%20Hotel.jpg', title: 'Requisição Web',itensCozinha: utilidades.itensCozinha},(err,html)=> {
         if(err) {
             console.log(err)
         }else {

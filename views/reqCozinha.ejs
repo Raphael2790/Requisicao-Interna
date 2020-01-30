@@ -6,23 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Requisição Cozinha</title>
     <link rel="stylesheet" href="../stylesheets/reset.css">
-    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/reqPages.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/9063logoSRH.ico">
 </head>
 <body>
     <header>
         <img src="../images/logoSRH.png" alt="Logo San Raphael">
-        <h1><%= title %></h1>
-        <h2>Cozinha</h2>
+        <div id="header">
+            <h1><%= title %></h1>
+            <h2>Cozinha</h2>
+        </div>
     </header>
     <main>
-        <form action="/reqCozinha" method="POST">
-            <% for(let item in itensCozinha) { %> 
-                <label for="<%= itensCozinha[item] %>"><input type="number" min="0" max="30"><%= itensCozinha[item] %></label>
-            <% } %>
-            <button type="submit">Confirmar</button>
-        </form>
+        <section>
+            <form action="/reqCozinha" method="POST">
+                <% for(let item in itensCozinha) { %>
+                    <p>
+                    <input type="number" min="0" max="30">
+                    <label for="<%= itensCozinha[item] %>"><%= itensCozinha[item] %></label>
+                    </p>
+                <% } %>
+                <button type="submit">Confirmar</button>
+            </form>
+        </section>
     </main>
-    <p</p>
+    <footer>
+        <p>&copy;Copyright San Raphael 2020</p>
+    </footer>
 </body>
 </html>
