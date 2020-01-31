@@ -50,6 +50,19 @@ form p{
   grid-template-columns: 30px 800px;
   grid-auto-rows: 30px;
   margin: 7px;
+  align-items: center;
+}
+
+form button {
+  width: 250px;
+  margin: 10px 0;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: #000 solid 2px;
+  color: #fff;
+  background: #C03731;
+  font-weight: bolder;
 }
 
 div {
@@ -74,7 +87,7 @@ footer p {
 @media (max-width:500px) {
   body {
     width:auto;
-    margin: 30px auto;
+    margin: 0 auto;
   }
 
   form {

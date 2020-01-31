@@ -22,7 +22,7 @@
             <form action="/reqCozinha" method="POST">
                 <% for(let item in itensCozinha) { %>
                     <p>
-                    <input type="number" min="0" max="30">
+                    <input type="number" min="0" max="30" name="<%= itensCozinha[item] %>">
                     <label for="<%= itensCozinha[item] %>"><%= itensCozinha[item] %></label>
                     </p>
                 <% } %>
